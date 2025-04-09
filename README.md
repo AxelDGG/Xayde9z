@@ -1,4 +1,4 @@
-### Hi there 👋
+### LEXA Studios WEB 👋
 
 <!--
 **Xayde9z/Xayde9z** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
