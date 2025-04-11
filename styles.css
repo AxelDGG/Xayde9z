@@ -1,27 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Aseguramos que el body ocupe toda la altura */
 body {
     font-family: Arial, sans-serif;
     background-image: url("tec.png");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
 
+/* Estilo para el header */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #791010; /* Color de fondo similar */
+    background-color: #791010;
     padding: 10px 20px;
     height: 75px;
 }
 
 .logo img {
-    width: 100px; /* Ajusta el tamaño del logo según tu necesidad */
+    width: 100px;
     height: auto;
 }
 
@@ -32,6 +30,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    
 }
 
 nav ul li a {
@@ -39,15 +38,14 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
-    background-color: #8A3131; /* Color de fondo de los botones */
+    background-color: #8A3131;
     border-radius: 140px;
-    transition: 
-    background-color 0.3s ease;
-    border: 2px solid black
+    transition: background-color 0.3s ease;
+    border: 2px solid black;
 }
 
 nav ul li a:hover {
-    background-color: #ad0000; /* Cambio de color al pasar el ratón */
+    background-color: #ad0000;
 }
 
 .user-icon img {
@@ -55,4 +53,64 @@ nav ul li a:hover {
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
+}
+
+/* Contenedor principal que centra el formulario de login */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 75px); /* Resta la altura del header */
+}
+
+/* Estilo del contenedor de login */
+.login-container {
+    background-color: rgba(45, 52, 55, 0.8); /* Fondo azul con transparencia */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Estilo del título "Login" */
+h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 36px;
+}
+
+/* Estilo de los labels */
+label {
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Estilo de los campos de entrada */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo del botón */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #8A3131;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ad0000;
 }
